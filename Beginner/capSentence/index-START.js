@@ -6,6 +6,7 @@ return the equivalent of the sentence when capitalised. E.g
 
 
 
+// USING FOREACH LOOP
 
 function capSentence(text) {
    let wordsArray = text.toLowerCase().split(' ');
@@ -18,6 +19,7 @@ function capSentence(text) {
    return capsArrayArray.join(' ');
 }
 
+// .MAP and .REPLACE
 function capSentence(text) {
   let wordsArray = text.toLowerCase().split(' ');
 

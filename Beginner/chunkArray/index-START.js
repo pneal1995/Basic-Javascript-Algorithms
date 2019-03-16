@@ -5,7 +5,26 @@
 */
 
 function chunkArray(array, size) {
-    // Code goes here
+    let result = [];
+
+    for (value of array){
+
+        let lastArray = result[result.length - 1];
+        if(!lastArray || lastArray.length == size){
+            result.push([value])
+        }else{
+            lastArray.push(value)
+        }
+    }
+
+    return result
+}
+
+function chunkArray(array, size) {
+    if(array.length <= size){
+        return [array]
+    }
+    return [array.slice(0,size), ...chunkArray(array.slice)]
 }
 
 
