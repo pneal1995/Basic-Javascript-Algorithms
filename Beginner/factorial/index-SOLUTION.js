@@ -1,6 +1,6 @@
 // USING A FOR LOOP
 
-function factorial(n) {
+function factorial1(n) {
     if (n <= 1) {
         return 1
     }
@@ -8,6 +8,7 @@ function factorial(n) {
         n *= i;
     }
     return n;
+    
 }
 
 // USING A WHILE LOOP
